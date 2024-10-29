@@ -87,3 +87,6 @@ GET https://uselessfacts.jsph.pl/api/v2/facts/random?language=en
 
 The `fetchRandomFact` function in `RandomFact.js` fetches a random fact from the API and displays it on the app.
 
+### AI Usage in Code
+
+AI was used to generate the initial code for the project based on the requirements that I gave it, I later edited to better fit my vision. It was most extensively used in the App.css file to help me style the website. With every new feature I added, I would ask it to help me generate the code for that feature, and then I would edit it to fit my needs.

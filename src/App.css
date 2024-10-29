@@ -1,0 +1,191 @@
+/* App.css */
+
+/* Global styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* Fact container styling */
+.fact-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border: 2px solid #4f9da6;
+  border-radius: 12px;
+  background-color: #e0f7fa;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+}
+
+.fact-container h2 {
+  color: #007acc;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.fact-container p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Form styling */
+input[type="text"], input[type="date"] {
+  padding: 12px;
+  width: calc(100% - 26px);
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+select {
+  padding: 12px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Eisenhower Matrix Layout */
+.eisenhower-matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #007acc;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+/* Individual Box Colors */
+.box:nth-child(1) {
+  background-color: #ff6b6b; /* Urgent & Important */
+}
+
+.box:nth-child(2) {
+  background-color: #ffa931; /* Not Urgent but Important */
+}
+
+.box:nth-child(3) {
+  background-color: #4f9da6; /* Urgent but Not Important */
+}
+
+.box:nth-child(4) {
+  background-color: #b8d8ba; /* Neither Urgent nor Important */
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for completed tasks */
+.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Checkbox styling */
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styling for the small remove button */
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: #e74c3c; /* Red color */
+  font-size: 1.2em;
+  margin-left: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-btn:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+/* Styling for the due date text */
+.due-date {
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 10px;
+  font-style: italic;
+}
